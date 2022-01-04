@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script>
+      try {
+        const sensor = new AmbientLightSensor()
+      } catch (err) {
+        console.warn(err.message)
+      }
+
+      try {
+        const accel = new Accelerometer()
+      } catch (err) {
+        console.warn(err.message)
+      }
+
+      try {
+        const gyro = new Gyroscope()
+      } catch (err) {
+        console.warn(err.message)
+      }
+
+      try {
+        const abs = new AbsoluteOrientationSensor()
+      } catch (err) {
+        console.warn(err.message)
+      }
+    </script>
+  </head>
+  <body>
+    TEST
+  </body>
+</html>

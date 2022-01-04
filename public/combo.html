@@ -1,17 +1,27 @@
 <html>
   <head>
     <script>
+      if ('AmbientLightSensor' in window) {
+        console.log('AMBIENT LIGHT SENSOR in window')
+        const sensor = new AmbientLightSensor()
+        sensor.onreading = () => {
+          console.log('Current light level:', sensor.illuminance)
+        }
+        sensor.onerror = event => {
+          console.log(event.error.name, event.error.message)
+        }
+        sensor.start()
+      }
+
       function handlePermission() {
         navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
           if (result.state == 'granted') {
             report(result.state)
-            geoBtn.style.display = 'none'
           } else if (result.state == 'prompt') {
             report(result.state)
             navigator.geolocation.getCurrentPosition(revealPosition, positionDenied, geoSettings)
           } else if (result.state == 'denied') {
             report(result.state)
-            geoBtn.style.display = 'inline'
           }
           result.onchange = function () {
             report(result.state)
