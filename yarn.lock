@@ -3098,9 +3098,15 @@ css@^3.0.0:
     source-map-resolve "^0.6.0"
 
 cssdb@^5.0.0:
+<<<<<<< HEAD
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/cssdb/-/cssdb-5.0.0.tgz#96db23e70dda3d03a32346de611f0e79fee68b7f"
   integrity sha512-Q7982SynYCtcLUBCPgUPFy2TZmDiFyimpdln8K2v4w2c07W4rXL7q5F1ksVAqOAQfxKyyUGCKSsioezKT5bU1Q==
+=======
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/cssdb/-/cssdb-5.1.0.tgz#ec728d5f5c0811debd0820cbebda505d43003400"
+  integrity sha512-/vqjXhv1x9eGkE/zO6o8ZOI7dgdZbLVLUGyVRbPgk6YipXbW87YzUCcO+Jrmi5bwJlAH6oD+MNeZyRgXea1GZw==
+>>>>>>> f6d01816ced51313cbf206a82e7d2cc44fc197e5
 
 cssesc@^3.0.0:
   version "3.0.0"
@@ -3494,9 +3500,15 @@ ejs@^3.1.6:
     jake "^10.6.1"
 
 electron-to-chromium@^1.4.17:
+<<<<<<< HEAD
   version "1.4.33"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.33.tgz#1fe18961becb51c7db8ec739c655ef1b93d9349e"
   integrity sha512-OVK1Ad3pHnmuXPhEfq85X8vUKr1UPNHryBnbKnyLcAfh8dPwoFjoDhDlP5KpPJIiymvSucZs48UBrE1250IxOw==
+=======
+  version "1.4.34"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.34.tgz#7d87dc0e95c2c65cbd0687ae23146a662506d1ef"
+  integrity sha512-B7g6Y9No9XMYk1VNrQ8KAmSEo1Iltrz/5EjOGxl1DffQAb3z/XbpHRCfYKwV8D+CPXm4Q7Xg1sceSt9osNwRIA==
+>>>>>>> f6d01816ced51313cbf206a82e7d2cc44fc197e5
 
 emittery@^0.8.1:
   version "0.8.1"
