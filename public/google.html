@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <script>
+      // https://developers.google.com/web/updates/2015/04/permissions-api-for-the-web
+
+      // Check for Geolocation API permissions
+      navigator.permissions.query({ name: 'geolocation' }).then(function (permissionStatus) {
+        console.log('geolocation permission state is ', permissionStatus.state)
+
+        permissionStatus.onchange = function () {
+          console.log('geolocation permission state has changed to ', this.state)
+        }
+      })
+
+      // Check for Accelerometer API permissions
+      navigator.permissions.query({ name: 'accelerometer' }).then(function (permissionStatus) {
+        console.log('accelerometer permission state is ', permissionStatus.state)
+      })
+
+      // Check for ambient-light-sensor API permissions
+      navigator.permissions
+        .query({ name: 'ambient-light-sensor' })
+        .then(function (permissionStatus) {
+          console.log('ambient-light-sensor permission state is ', permissionStatus.state)
+        })
+
+      // Check for magnetometer API permissions
+      navigator.permissions.query({ name: 'magnetometer' }).then(function (permissionStatus) {
+        console.log('magnetometer permission state is ', permissionStatus.state)
+      })
+
+      navigator.geolocation.getCurrentPosition(function (position) {
+        console.log('Geolocation permissions granted')
+        console.log('Latitude:' + position.coords.latitude)
+        console.log('Longitude:' + position.coords.longitude)
+      })
+
+      // https://www.w3.org/TR/gyroscope/#examples
+      // let gyro = new Gyroscope()
+      let gyro = new Gyroscope({ frequency: 60 })
+      gyro.start()
+
+      // This works, but console logs a lot
+      // gyro.onreading = () => {
+      //   console.log('Angular velocity around the X-axis ' + gyro.x)
+      //   console.log('Angular velocity around the Y-axis ' + gyro.y)
+      //   console.log('Angular velocity around the Z-axis ' + gyro.z)
+      // }
+
+      gyro.onerror = event => console.log(event.error.name, event.error.message)
+
+      // https://www.w3.org/TR/magnetometer/#examples
+      let magnet = new Magnetometer()
+      magnet.start()
+
+      magnet.onreading = () => {
+        console.log('Magnetic field along the X-axis ' + magnet.x)
+        console.log('Magnetic field along the Y-axis ' + magnet.y)
+        console.log('Magnetic field along the Z-axis ' + magnet.z)
+      }
+
+      magnet.onerror = event => console.log(event.error.name, event.error.message)
+
+      // https://www.w3.org/TR/ambient-light/#examples
+      const sensor = new AmbientLightSensor()
+      sensor.onreading = () => console.log(sensor.illuminance)
+      sensor.onerror = event => console.log(event.error.name, event.error.message)
+      sensor.start()
+    </script>
+  </head>
+  <body>
+    TESTING: https://developers.google.com/web/updates/2015/04/permissions-api-for-the-web
+
+    <!-- <script>
+      let magSensor = new Magnetometer({ frequency: 60 })
+
+      magSensor.addEventListener('reading', e => {
+        console.log('Magnetic field along the X-axis ' + magSensor.x)
+        console.log('Magnetic field along the Y-axis ' + magSensor.y)
+        console.log('Magnetic field along the Z-axis ' + magSensor.z)
+      })
+      magSensor.start()
+    </script> -->
+  </body>
+</html>
