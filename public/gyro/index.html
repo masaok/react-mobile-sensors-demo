@@ -5,7 +5,9 @@
 
       // https://www.w3.org/TR/gyroscope/#examples
       // let gyro = new Gyroscope()
-      let gyro = new Gyroscope({ frequency: 60 })
+
+      // Frequency is in hertz (max: 60 hz)
+      let gyro = new Gyroscope({ frequency: 5 })
       gyro.start()
 
       // This works, but console logs a lot

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const Gyro = ({ enableHighAccuracy, maximumAge, timeout } = {}, callback) => {
+const Geo = ({ enableHighAccuracy, maximumAge, timeout } = {}, callback) => {
   const [coordinates, setCoordinates] = useState({
     accuracy: null,
     altitude: null,
@@ -79,7 +79,7 @@ const Gyro = ({ enableHighAccuracy, maximumAge, timeout } = {}, callback) => {
   }, [callback, enableHighAccuracy, maximumAge, timeout])
 
   console.log(coordinates)
-  return <div>GYRO</div>
+  return <div>GEO</div>
 }
 
-export default Gyro
+export default Geo
