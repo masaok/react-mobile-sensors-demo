@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
 
-function App() {
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
+
+import { Helmet, HelmetProvider } from 'react-helmet-async'
+
+import Gyro from './components/Gyro'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <HelmetProvider>
+      <div className="App">
+        <Helmet>
+          <title>Mobile Sensors</title>
+        </Helmet>
+        <Router>
+          <Routes>
+            <Route path="//*" element={<Gyro />} />
+            {/* <Route path="//*" element={<GoogleHomepage />} /> */}
+          </Routes>
+        </Router>
+      </div>
+    </HelmetProvider>
+  )
 }
 
-export default App;
+export default App
