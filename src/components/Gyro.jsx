@@ -14,37 +14,6 @@ const Gyro = ({ enableHighAccuracy, maximumAge, timeout } = {}, callback) => {
   })
 
   useEffect(() => {
-    //   let didCancel
-    //   const updateCoordinates = ({ coords = {}, timestamp }) => {
-    //     const { accuracy, altitude, altitudeAccuracy, heading, latitude, longitude, speed } = coords
-    //     if (!didCancel) {
-    //       setCoordinates({
-    //         accuracy,
-    //         altitude,
-    //         altitudeAccuracy,
-    //         heading,
-    //         latitude,
-    //         longitude,
-    //         speed,
-    //         timestamp,
-    //         error: null,
-    //       })
-    //       if (callback instanceof Function) {
-    //         callback({
-    //           accuracy,
-    //           altitude,
-    //           altitudeAccuracy,
-    //           heading,
-    //           latitude,
-    //           longitude,
-    //           speed,
-    //           timestamp,
-    //           error: null,
-    //         })
-    //       }
-    //     }
-    //   }
-
     let sensor = new window.Gyroscope({ frequency: 5 })
 
     if (sensor) {

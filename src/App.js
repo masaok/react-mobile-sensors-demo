@@ -8,6 +8,7 @@ import Homepage from './components/Homepage'
 
 import Geo from './components/Geo'
 import Gyro from './components/Gyro'
+import GyroHook from './components/GyroHook'
 
 const App = () => {
   return (
@@ -20,8 +21,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="gyro/r" element={<Gyro />} />
+            <Route path="gyro/h" element={<GyroHook />} />
             <Route path="geo/r" element={<Geo />} />
-            {/* <Route path="//*" element={<GoogleHomepage />} /> */}
           </Routes>
         </Router>
       </div>
