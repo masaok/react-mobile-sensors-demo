@@ -19,8 +19,8 @@ const App = () => {
         <Router>
           <Routes>
             <Route path="/" element={<Homepage />} />
-            <Route path="react/gyro" element={<Gyro />} />
-            <Route path="react/geo" element={<Geo />} />
+            <Route path="gyro/r" element={<Gyro />} />
+            <Route path="geo/r" element={<Geo />} />
             {/* <Route path="//*" element={<GoogleHomepage />} /> */}
           </Routes>
         </Router>
