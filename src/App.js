@@ -4,7 +4,8 @@ import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
 
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
-import Homepage from './components/Homepage'
+import GyroDemo from './pages/GyroDemo'
+import Homepage from './pages/Homepage'
 
 import Geo from './components/Geo'
 import Gyro from './components/Gyro'
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/" element={<Homepage />} />
             <Route path="gyro/r" element={<Gyro />} />
             <Route path="gyro/h" element={<GyroHook />} />
+            <Route path="gyro/d" element={<GyroDemo />} />
             <Route path="geo/r" element={<Geo />} />
           </Routes>
         </Router>
