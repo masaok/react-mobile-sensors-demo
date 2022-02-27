@@ -9,9 +9,13 @@ import Homepage from './pages/Homepage'
 
 import Geo from './components/Geo'
 import Gyro from './components/Gyro'
+import GyroLocalHook from './components/GyroLocalHook'
 import GyroHook from './components/GyroHook'
+
 import AbsoluteOrientationDemo from './pages/AbsoluteOrientationDemo'
 import AbsoluteOrientationBox from './pages/AbsoluteOrientationBox'
+import AbsoluteOrientationHook from './pages/AbsoluteOrientationHook'
+import AbsoluteOrientationHook2 from './pages/AbsoluteOrientationHook2'
 
 const App = () => {
   return (
@@ -24,11 +28,14 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="gyro/r" element={<Gyro />} />
+            <Route path="gyro/o" element={<GyroLocalHook />} />
             <Route path="gyro/h" element={<GyroHook />} />
             <Route path="gyro/d" element={<GyroDemo />} />
             <Route path="geo/r" element={<Geo />} />
             <Route path="abs" element={<AbsoluteOrientationDemo />} />
             <Route path="abs/b" element={<AbsoluteOrientationBox />} />
+            <Route path="abs/h" element={<AbsoluteOrientationHook />} />
+            <Route path="abs/h2" element={<AbsoluteOrientationHook2 />} />
           </Routes>
         </Router>
       </div>

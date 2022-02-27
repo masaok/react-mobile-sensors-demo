@@ -1,14 +1,11 @@
-import useGyroscope from 'react-hook-gyroscope'
+import useGyroscope from '../hooks/useGyroscope'
 
 const onUpdate = data => {
   console.log('GYRO ON UPDATE: ', data)
 }
 
 const GyroHook = props => {
-  const gyro = useGyroscope(
-    { frequency: 5 },
-    onUpdate // named function reference required
-  )
+  const gyro = useGyroscope({ frequency: 5 }, onUpdate)
 
   return (
     <div>

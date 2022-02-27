@@ -8,22 +8,19 @@ const useAbsoluteOrientationSensor = ({ frequency, referenceFrame } = {}, callba
     let sensor = new window.AbsoluteOrientationSensor(options)
 
     if (sensor) {
-      // https://developer.mozilla.org/en-US/docs/Web/API/AbsoluteOrientationSensor#basic_example
-      sensor.addEventListener('reading', () => {
-        setQuaternion([...sensor.quaternion])
+      sensor.start()
+
+      sensor.onreading = () => {
+        const readings = [...sensor.quaternion]
+
+        setQuaternion([...readings])
 
         if (callback instanceof Function) {
           callback({
-            ...sensor.quaternion,
+            ...readings,
           })
         }
-      })
-      sensor.addEventListener('error', error => {
-        if (error.name === 'NotReadableError') {
-          console.log('Sensor is not available.')
-        }
-      })
-      sensor.start()
+      }
     }
 
     return () => {}

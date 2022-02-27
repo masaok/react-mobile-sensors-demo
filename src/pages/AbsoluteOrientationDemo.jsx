@@ -3,8 +3,6 @@ import { useState, useEffect } from 'react'
 // Source: https://developer.mozilla.org/en-US/docs/Web/API/AbsoluteOrientationSensor
 
 const options = { frequency: 1, referenceFrame: 'device' }
-
-// TODO: 'AbsoluteOrientationSensor' is not defined (skipping this sensor for now)
 const sensor = new window.AbsoluteOrientationSensor(options)
 
 const AbsoluteOrientationDemo = props => {

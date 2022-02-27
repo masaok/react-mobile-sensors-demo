@@ -1,5 +1,8 @@
 import { useRef, useState } from 'react'
-import { useFrame, useThree } from '@react-three/fiber'
+import {
+  useFrame,
+  // useThree
+} from '@react-three/fiber'
 
 function AbsBox(props) {
   const { gyro } = props
@@ -7,7 +10,7 @@ function AbsBox(props) {
 
   // FAIL
   // https://docs.pmnd.rs/react-three-fiber/getting-started/examples#basic-examples
-  const three = useThree()
+  // const three = useThree()
 
   // FAIL
   // https://threejs.org/docs/#api/en/math/Quaternion
