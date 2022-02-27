@@ -5,11 +5,11 @@ import Box from '../three/Box'
 import useGyroscope from '../hooks/useGyroscope'
 
 const onGyroscopeUpdate = gyro => {
-  // console.log('NEW GYRO INFO: ', gyro)
+  console.log('NEW GYRO INFO: ', gyro)
 }
 
 const GyroDemo = props => {
-  const gyro = useGyroscope({ frequency: 60 }, onGyroscopeUpdate)
+  const gyro = useGyroscope({ frequency: 10 }, onGyroscopeUpdate)
   // console.log(gyro)
 
   return (
