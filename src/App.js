@@ -11,6 +11,7 @@ import Geo from './components/Geo'
 import Gyro from './components/Gyro'
 import GyroHook from './components/GyroHook'
 import AbsoluteOrientationDemo from './pages/AbsoluteOrientationDemo'
+import AbsoluteOrientationBox from './pages/AbsoluteOrientationBox'
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="gyro/d" element={<GyroDemo />} />
             <Route path="geo/r" element={<Geo />} />
             <Route path="abs" element={<AbsoluteOrientationDemo />} />
+            <Route path="abs/b" element={<AbsoluteOrientationBox />} />
           </Routes>
         </Router>
       </div>
