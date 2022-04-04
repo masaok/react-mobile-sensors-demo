@@ -18,6 +18,7 @@ import AbsoluteOrientationHook from './pages/AbsoluteOrientationHook'
 import AbsoluteOrientationHook2 from './pages/AbsoluteOrientationHook2'
 
 import Accel from './components/Accel'
+import AccelLocalHookDemo from './pages/AccelLocalHookDemo'
 import AccelHookDemo from './pages/AccelHookDemo'
 
 const App = () => {
@@ -48,6 +49,7 @@ const App = () => {
 
             {/* Accelerometer */}
             <Route path="acc" element={<Accel />} />
+            <Route path="acc/lh" element={<AccelLocalHookDemo />} />
             <Route path="acc/h" element={<AccelHookDemo />} />
           </Routes>
         </Router>

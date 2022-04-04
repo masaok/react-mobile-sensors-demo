@@ -6988,6 +6988,11 @@ react-helmet-async@^1.2.2:
     react-fast-compare "^3.2.0"
     shallowequal "^1.1.0"
 
+react-hook-accelerometer@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-hook-accelerometer/-/react-hook-accelerometer-1.1.1.tgz#f82e26594a9e87bcbcbdc90dbfcf6a768db4353b"
+  integrity sha512-5iSy8qrli20xx97UJGGC9i3oUJWDXyh0nNWc4TxO1mvMAV8XddInD6uP8PyO7bKasiCo0Yxl2dbc42+iyeULhQ==
+
 react-hook-gyroscope@^1.1.11:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/react-hook-gyroscope/-/react-hook-gyroscope-1.1.11.tgz#335d4415552a29bbad74581ec15c8bd6cb569ebe"

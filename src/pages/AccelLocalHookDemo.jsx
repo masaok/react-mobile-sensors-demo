@@ -1,6 +1,6 @@
-import useAccelerometer from 'react-hook-accelerometer'
+import useAccelerometer from '../hooks/useAccelerometer'
 
-const AccelHookDemo = props => {
+const AccelLocalHookDemo = props => {
   const sensor = useAccelerometer({ frequency: 2 })
   console.log(sensor)
 
@@ -12,4 +12,4 @@ const AccelHookDemo = props => {
   )
 }
 
-export default AccelHookDemo
+export default AccelLocalHookDemo
