@@ -17,6 +17,9 @@ import AbsoluteOrientationBox from './pages/AbsoluteOrientationBox'
 import AbsoluteOrientationHook from './pages/AbsoluteOrientationHook'
 import AbsoluteOrientationHook2 from './pages/AbsoluteOrientationHook2'
 
+import Accel from './components/Accel'
+import AccelHookDemo from './pages/AccelHookDemo'
+
 const App = () => {
   return (
     <HelmetProvider>
@@ -27,15 +30,25 @@ const App = () => {
         <Router>
           <Routes>
             <Route path="/" element={<Homepage />} />
+
+            {/* Gyro */}
             <Route path="gyro/r" element={<Gyro />} />
             <Route path="gyro/o" element={<GyroLocalHook />} />
             <Route path="gyro/h" element={<GyroHook />} />
             <Route path="gyro/d" element={<GyroDemo />} />
+
+            {/* Geo */}
             <Route path="geo/r" element={<Geo />} />
+
+            {/* Absolute Orientation */}
             <Route path="abs" element={<AbsoluteOrientationDemo />} />
             <Route path="abs/b" element={<AbsoluteOrientationBox />} />
             <Route path="abs/h" element={<AbsoluteOrientationHook />} />
             <Route path="abs/h2" element={<AbsoluteOrientationHook2 />} />
+
+            {/* Accelerometer */}
+            <Route path="acc" element={<Accel />} />
+            <Route path="acc/h" element={<AccelHookDemo />} />
           </Routes>
         </Router>
       </div>
