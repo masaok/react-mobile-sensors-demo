@@ -32,6 +32,7 @@ import LinearAccelLocalHookDemo from './pages/LinearAccelLocalHookDemo'
 import LinearAccelRealHookDemo from './pages/LinearAccelRealHookDemo'
 
 import MagnetometerLocalHookDemo from './pages/MagnetometerLocalHookDemo'
+import MagnetometerRealHookDemo from './pages/MagnetometerRealHookDemo'
 
 const App = () => {
   return (
@@ -79,6 +80,7 @@ const App = () => {
 
             {/* Magnetometer */}
             <Route path="mag-h" element={<MagnetometerLocalHookDemo />} />
+            <Route path="mag-r" element={<MagnetometerRealHookDemo />} />
           </Routes>
         </Router>
       </div>
