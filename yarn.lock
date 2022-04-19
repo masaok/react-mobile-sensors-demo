@@ -7029,6 +7029,11 @@ react-hook-gyroscope@^1.1.11:
   resolved "https://registry.yarnpkg.com/react-hook-gyroscope/-/react-hook-gyroscope-1.1.12.tgz#9c6e3f0919700c98d601c0d659f6250aea975f9c"
   integrity sha512-01c78itzI26GOGZZptjNMEbDs8i1Emt+rA2n92yOnYNtXCMaqajzA8y5v3cngNbapIROf4ftR5rGENXWt2U27g==
 
+react-hook-linear-acceleration@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-hook-linear-acceleration/-/react-hook-linear-acceleration-1.1.1.tgz#e938333b5e9e5d0e39d8708035ff38725f34351e"
+  integrity sha512-haADa371IirCbObNvqytwSguOXeUkSWO9EWKTKxy+k+gs1LlLMDjOnleCUhE01lgw7dUTcF/VK/yxYQM8/kisA==
+
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"

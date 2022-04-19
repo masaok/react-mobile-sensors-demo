@@ -27,6 +27,10 @@ import AccelLocalHookDemo from './pages/AccelLocalHookDemo'
 import AccelHookDemo from './pages/AccelHookDemo'
 import AmbientLightLocalHookDemo from './pages/AmbientLightLocalHookDemo'
 
+import LinearAccelDemo from './pages/LinearAccelDemo'
+import LinearAccelLocalHookDemo from './pages/LinearAccelLocalHookDemo'
+import LinearAccelRealHookDemo from './pages/LinearAccelRealHookDemo'
+
 const App = () => {
   return (
     <HelmetProvider>
@@ -65,6 +69,11 @@ const App = () => {
             <Route path="grav" element={<GravityDemo />} />
             <Route path="grav/lh" element={<GravityLocalHookDemo />} />
             <Route path="grav-r" element={<GravityRealHookDemo />} />
+
+            {/* Linear Acceleration */}
+            <Route path="lin" element={<LinearAccelDemo />} />
+            <Route path="lin-h" element={<LinearAccelLocalHookDemo />} />
+            <Route path="lin-r" element={<LinearAccelRealHookDemo />} />
           </Routes>
         </Router>
       </div>
