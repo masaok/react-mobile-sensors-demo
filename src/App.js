@@ -4,9 +4,13 @@ import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
 
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
-import GyroDemo from './pages/GyroDemo'
 import Homepage from './pages/Homepage'
+
 import GravityDemo from './pages/GravityDemo'
+import GravityLocalHookDemo from './pages/GravityLocalHookDemo'
+import GravityRealHookDemo from './pages/GravityRealHookDemo'
+
+import GyroDemo from './pages/GyroDemo'
 
 import Geo from './components/Geo'
 import Gyro from './components/Gyro'
@@ -59,6 +63,8 @@ const App = () => {
 
             {/* Gravity */}
             <Route path="grav" element={<GravityDemo />} />
+            <Route path="grav/lh" element={<GravityLocalHookDemo />} />
+            <Route path="grav-r" element={<GravityRealHookDemo />} />
           </Routes>
         </Router>
       </div>
