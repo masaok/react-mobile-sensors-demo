@@ -80,7 +80,7 @@ const App = () => {
 
             {/* Magnetometer */}
             <Route path="mag-h" element={<MagnetometerLocalHookDemo />} />
-            {/* <Route path="mag-r" element={<MagnetometerRealHookDemo />} /> */}
+            <Route path="mag-r" element={<MagnetometerRealHookDemo />} />
           </Routes>
         </Router>
       </div>
