@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const sensor = new window.Magnetometer({ frequency: 1 })
+const sensor = window.Magnetometer ? new window.Magnetometer({ frequency: 1 }) : null
 
 const useMagnetometer = ({ frequency } = {}) => {
   const [data, setData] = useState({

@@ -2,7 +2,7 @@
 import useAbsoluteOrientationSensor from '../hooks/useAbsoluteOrientationSensor'
 
 const onUpdate = info => {
-  // console.log('NEW INFO: ', info)
+  console.log('NEW INFO: ', info)
 }
 
 const AbsoluteOrientationHook = props => {
